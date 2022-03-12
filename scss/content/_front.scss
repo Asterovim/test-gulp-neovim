@@ -1,0 +1,64 @@
+.bloc-actu-twitter {
+  @include xy-grid-container($width: $container-home);
+  #fcrin-home-actu-twitter-grid {
+    @include xy-grid;
+    @include xy-gutters($gutters: rem-calc(30), $negative: true);
+    > div {
+      @include xy-cell(auto, $gutters: rem-calc(30));
+    }
+  }
+}
+.bloc-presentation {
+  @include xy-grid-container();
+  text-align: center;
+}
+.bloc-des-chiffres-cles {
+  background: $zurb-color-link;
+  color: $zurb-color-white;
+  .bloc-des-chiffres-cles-grid {
+    @include xy-grid-container($width: $container-home);
+    .field--name-field-chiffre-cle {
+      @include xy-grid;
+      @include xy-gutters($gutters: rem-calc(30), $negative: true);
+      text-align: center;
+      justify-content: center;
+      > div {
+        @include xy-cell(3, $gutters: rem-calc(30));
+      }
+    }
+  }
+}
+.bloc-de-la-carte {
+  background: $zurb-color-grey;
+  .bloc-de-la-carte-grid {
+    @include xy-grid-container($width: $container-home);
+  }
+}
+.entete-twitter {
+  display: flex;
+}
+.field--name-field-tweet-content {
+  margin-left: rem-calc(50);
+}
+.field--name-field-tweet-user {
+  p {
+    text-decoration: none;
+    &:before {
+      content: "@";
+    }
+  }
+}
+
+.bloc-partenaires {
+  background: $zurb-color-grey;
+  .field--name-dynamic-twig-fieldblock-content-bloc-des-partenaires {
+    @include xy-grid-container($width: $container-home);
+    text-align: center;
+    #zf-splide-partenaires-accueil-list {
+      align-items: center;
+    }
+    .field--type-image {
+      text-align: center;
+    }
+  }
+}

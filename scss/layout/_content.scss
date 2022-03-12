@@ -1,0 +1,162 @@
+.zf-main-container {
+  @include xy-grid-container($width: $grid-container + 4rem, $padding: 4rem);
+
+  .zf-main-grid {
+    @include xy-grid;
+    .zf-main-content {
+      @include xy-cell(auto, $gutters: 0rem);
+    }
+
+    .zf-main-sidebar-first {
+      @include xy-cell(2, $gutters: 2rem);
+    }
+
+    .zf-main-sidebar-second {
+      @include xy-cell(2, $gutters: 2rem);
+    }
+
+    /* brique diaporama */
+    .field--name-dynamic-twig-fieldparagraph-brique-diaporama {
+      .orbit {
+        .orbit-player {
+          span {
+            background-repeat: no-repeat;
+            width: rem-calc(30);
+            height: rem-calc(30);
+            top: rem-calc(13);
+            display: inline-block;
+          }
+          .orbit-player-pause {
+            background-image: url("../../../images/foundation/carousel/pause-circle-solid.svg");
+          }
+          .orbit-player-play {
+            background-image: url("../../../images/foundation/carousel/play-circle-solid.svg");
+            display: none;
+          }
+        }
+      }
+    }
+    /* brique accordion */
+    .field--name-dynamic-twig-fieldparagraph-brique-accordeon {
+      .node-title-h2-accordion {
+        position: relative;
+        button {
+          width: 100%;
+          min-height: rem-calc(50);
+          padding-right: rem-calc(50);
+          color: $primary-color;
+          cursor: pointer;
+          .icon-accordion {
+            background-repeat: no-repeat;
+            width: rem-calc(30);
+            height: rem-calc(30);
+            position: absolute;
+            top: rem-calc(13);
+            right: 0;
+          }
+          .icon-accordion-plus {
+            background-image: url("../../../images/foundation/accordion/plus-square-solid.svg");
+          }
+          .icon-accordion-minus {
+            background-image: url("../../../images/foundation/accordion/minus-square-solid.svg");
+          }
+        }
+      }
+    }
+
+    /* Vidéo distante */
+    /* pleine largeur par défaut */
+    .zf-view-mode-default.zf-bundle-video_distante {
+      .field--name-field-media-oembed-video {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    /* 480p display */
+    .zf-view-mode-video_480p.zf-bundle-video_distante {
+      .align-center .field--name-field-media-oembed-video {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .align-left {
+        float: inherit;
+      }
+      .align-right {
+        float: inherit;
+        .field--name-field-media-oembed-video {
+          margin-left: auto;
+        }
+      }
+      .field--name-field-media-oembed-video {
+        position: relative;
+        height: 0;
+        padding-bottom: 36.4%;
+        max-width: 854px;
+        max-height: 480px;
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.zf-bundle-1_colonne.mise_en_avant {
+  background: $zurb-color-grey;
+}
+
+.title-accordeon-picto {
+  display: inline-block;
+  img {
+    width: rem-calc(20);
+    height: rem-calc(20);
+  }
+}
+
+.title-accordeon-texte {
+  display: inline-block;
+}
+
+.zf-paragraph.zf-bundle-2_colonnes.success_stories {
+  .zurb-grid-two-middle {
+    > div {
+      border: rem-calc(1) solid $primary-color;
+    }
+  }
+}
+
+.field--name-field-bouton {
+  text-align: center;
+  a {
+    @include button;
+  }
+}
+
+@media screen and (min-width: 790px) {
+  .field--name-dynamic-twig-fieldparagraph-diaporama {
+    padding-left: rem-calc(60);
+    padding-right: rem-calc(60);
+  }
+}
+
+.field--name-dynamic-twig-fieldparagraph-diaporama {
+  .field--name-field-figcaption {
+    text-align: center;
+    max-width: rem-calc(410);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

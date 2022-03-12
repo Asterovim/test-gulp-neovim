@@ -1,0 +1,6 @@
+.zf-featured-container {
+  @include xy-grid-container;
+  .messages--status {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,4 @@
+# Browserslist settings to produce CSS supported by these Browsers
+> 1%
+last 2 versions
+ie >= 9

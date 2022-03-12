@@ -1,0 +1,114 @@
+.zurb-grid-one {
+  .zurb-grid-one-top {
+
+    .zurb-grid-one-top-cell {
+
+    }
+  }
+  .zurb-grid-one-middle {
+
+    .zurb-grid-one-middle-cell {
+
+    }
+  }
+  .zurb-grid-one-bottom {
+
+    .zurb-grid-one-bottom-cell {
+
+    }
+  }
+}
+
+.zurb-grid-two {
+  .zurb-grid-two-top {
+
+    .zurb-grid-two-top-cell {
+
+    }
+  }
+  .zurb-grid-two-middle {
+    @include xy-grid;
+    @include xy-gutters($gutters: $zf-grid-margin-gutters, $negative: true);
+    .zurb-grid-two-middle-left-cell {
+      @include xy-cell(auto);
+      @include xy-gutters($gutters: $zf-grid-margin-gutters, $gutter-type: margin);
+    }
+    .zurb-grid-two-middle-right-cell {
+      @include xy-cell(auto);
+      @include xy-gutters($gutters: $zf-grid-margin-gutters, $gutter-type: margin);
+    }
+  }
+  .zurb-grid-two-bottom {
+
+    .zurb-grid-two-bottom-cell {
+
+    }
+  }
+}
+
+.zurb-grid-three {
+  .zurb-grid-three-top {
+
+    .zurb-grid-three-top-cell {
+
+    }
+  }
+  .zurb-grid-three-middle {
+    @include xy-grid;
+    @include xy-gutters($gutters: $zf-grid-margin-gutters, $negative: true);
+    .zurb-grid-three-middle-left-cell {
+      @include xy-cell(auto);
+      @include xy-gutters($gutters: $zf-grid-margin-gutters, $gutter-type: margin);
+    }
+    .zurb-grid-three-middle-center-cell {
+      @include xy-cell(auto);
+      @include xy-gutters($gutters: $zf-grid-margin-gutters, $gutter-type: margin);
+    }
+    .zurb-grid-three-middle-right-cell {
+      @include xy-cell(auto);
+      @include xy-gutters($gutters: $zf-grid-margin-gutters, $gutter-type: margin);
+    }
+  }
+  .zurb-grid-three-bottom {
+
+    .zurb-grid-three-bottom-cell {
+
+    }
+  }
+}
+
+.zurb-grid-four {
+    .zurb-grid-four-top {
+
+      .zurb-grid-four-top-cell {
+
+      }
+    }
+    .zurb-grid-four-middle {
+      @include xy-grid;
+      @include xy-gutters($gutters: $zf-grid-margin-gutters, $negative: true);
+      .zurb-grid-four-middle-1-cell {
+        @include xy-cell(auto);
+        @include xy-gutters($gutters: $zf-grid-margin-gutters, $gutter-type: margin);
+      }
+      .zurb-grid-four-middle-2-cell {
+        @include xy-cell(auto);
+        @include xy-gutters($gutters: $zf-grid-margin-gutters, $gutter-type: margin);
+      }
+      .zurb-grid-four-middle-3-cell {
+        @include xy-cell(auto);
+        @include xy-gutters($gutters: $zf-grid-margin-gutters, $gutter-type: margin);
+      }
+      .zurb-grid-four-middle-4-cell {
+        @include xy-cell(auto);
+        @include xy-gutters($gutters: $zf-grid-margin-gutters, $gutter-type: margin);
+      }
+    }
+    .zurb-grid-four-bottom {
+
+      .zurb-grid-four-bottom-cell {
+
+      }
+    }
+  }
+  
